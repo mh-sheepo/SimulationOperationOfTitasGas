@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="787.0" prefWidth="897.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SheepuScene.LeaveofAbsenceCCController">
+   <children>
+      <Text layoutX="308.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Care" textAlignment="CENTER" wrappingWidth="309.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Button focusTraversable="false" layoutX="64.0" layoutY="242.0" mnemonicParsing="false" onAction="#leaveOfAbsense" text="Leave Of Absense" />
+      <Text layoutX="203.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TItas Gas" textAlignment="CENTER" wrappingWidth="516.84375">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="413.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave Of Absense" />
+      <ImageView fitHeight="113.0" fitWidth="115.0" layoutX="76.0" layoutY="57.0">
+         <image>
+            <Image url="@titas.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="leave_of_absense_label_cc" layoutX="190.0" layoutY="267.0" prefHeight="408.0" prefWidth="560.0">
+         <children>
+            <DatePicker fx:id="fromStart_cc" layoutX="200.0" layoutY="162.0" promptText="Starting Date" />
+            <Label layoutX="122.0" layoutY="164.0" text="From">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="toEnd_cc" layoutX="200.0" layoutY="194.0" promptText="End Date" />
+            <Label layoutX="122.0" layoutY="196.0" text="To">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="129.0" text="Reason">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="reason_cc" layoutX="200.0" layoutY="127.0" prefHeight="25.0" prefWidth="174.0" promptText="Reason" />
+            <Label layoutX="120.0" layoutY="228.0" text="Total days">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalDays_cc" layoutX="200.0" layoutY="226.0" prefHeight="25.0" prefWidth="174.0" />
+            <Label layoutX="118.0" layoutY="261.0" text="Joining Date" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="joiningDate_cc" layoutX="200.0" layoutY="259.0" prefHeight="25.0" prefWidth="174.0" />
+         </children>
+      </AnchorPane>
+      <Button focusTraversable="false" layoutX="400.0" layoutY="697.0" mnemonicParsing="false" onAction="#handleButtonActionGenereteLeave" text="Generate Leave Request" />
+      <Button layoutX="38.0" layoutY="369.0" mnemonicParsing="false" onAction="#next_leaveOfabsense_button" text="Next" />
+      <Button layoutX="105.0" layoutY="369.0" mnemonicParsing="false" onAction="#previous_leaveOfabsense_button" text="Previous" />
+   </children>
+</AnchorPane>

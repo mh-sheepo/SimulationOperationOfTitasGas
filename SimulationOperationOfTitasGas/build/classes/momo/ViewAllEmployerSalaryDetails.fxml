@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="momo.ViewAllEmployerSalaryDetailsController">
+   <children>
+      <Label alignment="CENTER" layoutY="52.0" prefHeight="25.0" prefWidth="812.0" style="-fx-background-color: royalblue;" text="Titas Gas Transmission &amp; Distribution Company Limited, Call Center : 16496 " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="619.0" prefHeight="18.0" prefWidth="802.0" style="-fx-background-color: royalblue;" text="Copyright © 2023  TITAS GAS LIMITED. ALL RIGHTS RESERVED - Developed By IUB" textAlignment="CENTER" wrapText="true" />
+      <ImageView fitHeight="97.0" fitWidth="102.0" layoutX="360.0" layoutY="86.0">
+         <image>
+            <Image url="@titas.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="97.0" prefHeight="17.0" prefWidth="112.0" text="UserName : OM" />
+      <Label layoutX="37.0" layoutY="122.0" prefHeight="25.0" prefWidth="206.0" text="Designation : Operations Manager" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="702.0" layoutY="169.0" mnemonicParsing="false" onAction="#Logout_button" prefHeight="25.0" prefWidth="79.0" text="Logout" />
+      <Label layoutX="37.0" layoutY="194.0" prefHeight="25.0" prefWidth="197.0" text="View all employer salary details" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextArea layoutX="33.0" layoutY="228.0" prefHeight="322.0" prefWidth="756.0" style="-fx-background-color: blue;" />
+      <Label layoutX="33.0" layoutY="262.0" prefHeight="17.0" prefWidth="756.0" style="-fx-background-color: blue;" text="Employer Id          Employer Name         Date of Joinning            Date of birth           Job Post            Salary Amount            Date of salary ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="340.0" layoutY="228.0" prefHeight="17.0" prefWidth="163.0" text="All Employer Salary Details">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="702.0" layoutY="93.0" mnemonicParsing="false" onAction="#Next_button" prefHeight="25.0" prefWidth="79.0" text="Next" />
+      <Button layoutX="702.0" layoutY="128.0" mnemonicParsing="false" onAction="#Previous_button" prefHeight="25.0" prefWidth="79.0" text="Previous" />
+   </children>
+</AnchorPane>

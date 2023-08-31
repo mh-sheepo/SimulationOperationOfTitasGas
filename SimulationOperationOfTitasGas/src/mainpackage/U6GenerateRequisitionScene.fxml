@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="598.0" prefWidth="602.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="mainpackage.U6GenerateRequisitionSceneController">
+   <children>
+      <Button layoutX="15.0" layoutY="550.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="34.0" prefWidth="75.0" style="-fx-background-radius: 10;" text="Back" />
+      <Button layoutX="458.0" layoutY="550.0" mnemonicParsing="false" onAction="#generateRequsitionButtonOnClick" prefHeight="34.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Generate Requisition" />
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="81.0" prefHeight="17.0" prefWidth="129.0" text="Requisition ID" textAlignment="RIGHT" />
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="115.0" prefHeight="17.0" prefWidth="129.0" text="Product Name" textAlignment="RIGHT" />
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="48.0" prefHeight="17.0" prefWidth="129.0" text="Name of the Employee" />
+      <TextField fx:id="productNameTextId" layoutX="211.0" layoutY="111.0" prefHeight="25.0" prefWidth="359.0" promptText="Enter Name of the Product" />
+      <Label fx:id="employeeRequisitionNameTextLabel" alignment="CENTER" layoutX="211.0" layoutY="48.0" prefHeight="17.0" prefWidth="149.0" />
+      <Label fx:id="requisitionNameLabel" alignment="CENTER" layoutX="211.0" layoutY="81.0" prefHeight="17.0" prefWidth="149.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="145.0" prefHeight="17.0" prefWidth="129.0" text="Quantity" textAlignment="RIGHT" />
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="177.0" prefHeight="17.0" prefWidth="129.0" text="Date of Requsition" textAlignment="RIGHT" />
+      <TextField fx:id="productNameTextId" layoutX="211.0" layoutY="141.0" prefHeight="25.0" prefWidth="359.0" promptText="Enter Quantity " />
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="215.0" prefHeight="17.0" prefWidth="129.0" text="Locaiton" textAlignment="RIGHT" />
+      <DatePicker fx:id="requsitionDatePicker" layoutX="211.0" layoutY="173.0" prefHeight="25.0" prefWidth="359.0" promptText="Select Date" />
+      <ComboBox fx:id="LocationComboBox" layoutX="211.0" layoutY="211.0" prefHeight="25.0" prefWidth="149.0" promptText="Select Location" />
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="259.0" prefHeight="17.0" prefWidth="129.0" text="Reson of Purchase" textAlignment="RIGHT" />
+      <TextArea layoutX="211.0" layoutY="268.0" prefHeight="251.0" prefWidth="359.0" promptText="Enter the reason of purchase" wrapText="true" />
+   </children>
+</AnchorPane>

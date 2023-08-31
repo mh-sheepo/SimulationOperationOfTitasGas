@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="799.0" prefWidth="949.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SheepuScene.ReadCustomeInfoController">
+   <children>
+      <Text layoutX="331.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Care" textAlignment="CENTER" wrappingWidth="309.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <ListView focusTraversable="false" layoutX="211.0" layoutY="252.0" prefHeight="453.0" prefWidth="636.0" />
+      <Button focusTraversable="false" layoutX="28.0" layoutY="252.0" mnemonicParsing="false" onAction="#read_customer_info" prefHeight="36.0" prefWidth="165.0" text="Read Customer Information" wrapText="true" />
+      <Text layoutX="223.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TItas Gas" textAlignment="CENTER" wrappingWidth="516.84375">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="423.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Informations " />
+      <ImageView fitHeight="113.0" fitWidth="115.0" layoutX="86.0" layoutY="67.0">
+         <image>
+            <Image url="@titas.jpg" />
+         </image>
+      </ImageView>
+      <Button focusTraversable="false" layoutX="43.0" layoutY="342.0" mnemonicParsing="false" onAction="#submit_button" prefHeight="25.0" prefWidth="149.0" text="Submit" wrapText="true" />
+      <TextField fx:id="uniqueID" layoutX="67.0" layoutY="301.0" prefHeight="25.0" prefWidth="125.0" promptText="Enter Unique ID No" />
+      <Label layoutX="30.0" layoutY="303.0" prefHeight="20.0" prefWidth="44.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="26.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextCinfo" text="Next" />
+      <Button layoutX="92.0" layoutY="400.0" mnemonicParsing="false" onAction="#previousCinfo" text="Previous" />
+      <TableView layoutX="211.0" layoutY="252.0" prefHeight="453.0" prefWidth="636.0">
+        <columns>
+          <TableColumn fx:id="uid_info" prefWidth="75.0" text="UID" />
+          <TableColumn fx:id="meterno_info" prefWidth="75.0" text="Meter No" />
+            <TableColumn fx:id="name_info" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="address_info" prefWidth="95.0" text="Address" />
+            <TableColumn fx:id="phone_no" prefWidth="95.0" text="Phone No" />
+            <TableColumn fx:id="line_category" prefWidth="95.0" text="Line Catergory" />
+            <TableColumn fx:id="zone_info" prefWidth="124.0" text="Zone" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="momo.DeleteInventoryItemsController">
+   <children>
+      <Label alignment="CENTER" layoutY="22.0" prefHeight="25.0" prefWidth="782.0" style="-fx-background-color: royalblue;" text="Titas Gas Transmission &amp; Distribution Company Limited, Call Center : 16496 " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="589.0" prefHeight="18.0" prefWidth="782.0" style="-fx-background-color: royalblue;" text="Copyright © 2023  TITAS GAS LIMITED. ALL RIGHTS RESERVED - Developed By IUB" textAlignment="CENTER" wrapText="true" />
+      <ImageView fitHeight="97.0" fitWidth="102.0" layoutX="350.0" layoutY="56.0">
+         <image>
+            <Image url="@titas.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="39.0" layoutY="67.0" prefHeight="17.0" prefWidth="112.0" text="UserName : PICM" />
+      <Label layoutX="39.0" layoutY="92.0" prefHeight="49.0" prefWidth="184.0" text="Designation : Procurement and Inventory Control Manager " wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="696.0" layoutY="129.0" mnemonicParsing="false" onAction="#logout_button" prefHeight="25.0" prefWidth="79.0" text="Logout" />
+      <Label layoutX="39.0" layoutY="164.0" prefHeight="25.0" prefWidth="135.0" text="Delete Inventory Items" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextArea fx:id="textaeadfxid" layoutX="31.0" layoutY="198.0" prefHeight="322.0" prefWidth="743.0" style="-fx-background-color: blue;" />
+      <Button fx:id="deletefxid" layoutX="724.0" layoutY="529.0" mnemonicParsing="false" text="Delete" />
+      <Label layoutX="39.0" layoutY="238.0" prefHeight="17.0" prefWidth="728.0" style="-fx-background-color: blue;" text="Id                                   Items Name                                                                                                                   Quantity                   Price">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="360.0" layoutY="205.0" text="Delete Inventory Items">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="696.0" layoutY="63.0" mnemonicParsing="false" onAction="#next_button" prefHeight="25.0" prefWidth="79.0" text="Next" />
+      <Button layoutX="696.0" layoutY="92.0" mnemonicParsing="false" onAction="#Previous_button" prefHeight="25.0" prefWidth="79.0" text="Previous" />
+   </children>
+</AnchorPane>

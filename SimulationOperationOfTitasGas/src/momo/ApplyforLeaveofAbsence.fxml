@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="momo.ApplyForLeaveOfAbsenceController">
+   <children>
+      <Label alignment="CENTER" layoutY="62.0" prefHeight="25.0" prefWidth="822.0" style="-fx-background-color: royalblue;" text="Titas Gas Transmission &amp; Distribution Company Limited, Call Center : 16496 " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="629.0" prefHeight="18.0" prefWidth="822.0" style="-fx-background-color: royalblue;" text="Copyright © 2023  TITAS GAS LIMITED. ALL RIGHTS RESERVED - Developed By IUB" textAlignment="CENTER" wrapText="true" />
+      <ImageView fitHeight="97.0" fitWidth="102.0" layoutX="370.0" layoutY="96.0">
+         <image>
+            <Image url="@titas.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="107.0" prefHeight="17.0" prefWidth="112.0" text="UserName : OM" />
+      <Label layoutX="47.0" layoutY="132.0" prefHeight="25.0" prefWidth="204.0" text="Designation : Operations Manager" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="675.0" layoutY="157.0" mnemonicParsing="false" onAction="#logout_button" prefHeight="25.0" prefWidth="79.0" text="Logout" />
+      <Label layoutX="47.0" layoutY="204.0" prefHeight="25.0" prefWidth="177.0" text="Apply for Leave of Absence" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextArea fx:id="textarea" layoutX="43.0" layoutY="238.0" prefHeight="277.0" prefWidth="546.0" promptText="Send massage" style="-fx-background-color: blue;" />
+      <Button fx:id="sendfxid" layoutX="535.0" layoutY="531.0" mnemonicParsing="false" text="Send" />
+      <Button layoutX="675.0" layoutY="95.0" mnemonicParsing="false" onAction="#next_buttons" prefHeight="25.0" prefWidth="79.0" text="Next" />
+      <Button layoutX="675.0" layoutY="124.0" mnemonicParsing="false" onAction="#Previous_button" prefHeight="25.0" prefWidth="79.0" text="Previous" />
+   </children>
+</AnchorPane>

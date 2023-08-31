@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SheepuScene.AddNewClientsController">
+   <children>
+      <Text layoutX="318.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Care" textAlignment="CENTER" wrappingWidth="309.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="213.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TItas Gas" textAlignment="CENTER" wrappingWidth="516.84375">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="398.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Request For Adding New Clients">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="113.0" fitWidth="115.0" layoutX="86.0" layoutY="67.0">
+         <image>
+            <Image url="@titas.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="200.0" layoutY="277.0" prefHeight="408.0" prefWidth="560.0">
+         <children>
+            <Label layoutX="116.0" layoutY="115.0" text="Mother's Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mothernameID" layoutX="250.0" layoutY="112.0" prefHeight="25.0" prefWidth="174.0" />
+            <Label layoutX="113.0" layoutY="147.0" prefHeight="20.0" prefWidth="119.0" text=" Present Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="presentAdd" layoutX="250.0" layoutY="147.0" prefHeight="43.0" prefWidth="174.0" />
+            <TextField fx:id="nameId" layoutX="250.0" layoutY="51.0" prefHeight="25.0" prefWidth="174.0" promptText="Name of User" />
+            <Label layoutX="115.0" layoutY="53.0" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fathernameID" layoutX="250.0" layoutY="82.0" prefHeight="25.0" prefWidth="174.0" />
+            <Label layoutX="116.0" layoutY="84.0" text="Father's Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="321.0" text="*" textFill="#f50000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="54.0" text="*" textFill="#f50000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="285.0" text="*" textFill="#f50000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="321.0" text="Line Catagory">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lineID" layoutX="252.0" layoutY="318.0" prefHeight="25.0" prefWidth="174.0" promptText="Prepaid/Postpaid" />
+            <Label layoutX="117.0" layoutY="353.0" prefHeight="20.0" prefWidth="119.0" text="Willing To Use">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="wilingtouseID" layoutX="251.0" layoutY="353.0" prefHeight="17.0" prefWidth="174.0" promptText="Residential/Commercial" />
+            <TextField fx:id="mobileID" layoutX="250.0" layoutY="250.0" prefHeight="25.0" prefWidth="174.0" />
+            <Label layoutX="119.0" layoutY="252.0" text="Mobile No">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="195.0" prefHeight="20.0" prefWidth="127.0" text="Permanent Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="permanentADD" layoutX="251.0" layoutY="195.0" prefHeight="43.0" prefWidth="174.0" />
+            <Label layoutX="121.0" layoutY="285.0" text="NID No">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nidID" layoutX="251.0" layoutY="282.0" prefHeight="25.0" prefWidth="174.0" promptText="National Identification No" />
+            <Label layoutX="114.0" layoutY="252.0" text="*" textFill="#f50000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="85.0" text="*" textFill="#f50000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="115.0" text="*" textFill="#f50000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="353.0" text="*" textFill="#f50000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button focusTraversable="false" layoutX="468.0" layoutY="707.0" mnemonicParsing="false" onAction="#submit_button_addingClients" onMouseClicked="#buttonOnClickaddclientsubmit" text="Submit" />
+      <Button layoutX="55.0" layoutY="707.0" mnemonicParsing="false" onAction="#next_button_addingClients" text="Next" />
+      <Button layoutX="122.0" layoutY="707.0" mnemonicParsing="false" onAction="#previous_button_addingClients" text="Previous" />
+   </children>
+</AnchorPane>

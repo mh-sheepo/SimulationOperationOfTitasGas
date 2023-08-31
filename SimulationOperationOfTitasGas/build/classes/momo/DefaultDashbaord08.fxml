@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="momo.DefaultDashbaord08Controller">
+   <children>
+      <AnchorPane layoutX="6.0" prefHeight="533.0" prefWidth="880.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="539.0" prefHeight="18.0" prefWidth="879.0" style="-fx-background-color: royalblue;" text="Copyright © 2023  TITAS GAS LIMITED. ALL RIGHTS RESERVED - Developed By IUB" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="29.0" layoutY="69.0" prefHeight="42.0" prefWidth="305.0" text="Designation : Procurement &amp; Inventory Control Manager" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutY="8.0" prefHeight="25.0" prefWidth="879.0" style="-fx-background-color: royalblue;" text="Titas Gas Transmission &amp; Distribution Company Limited, Call Center : 16496 " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="46.0" prefHeight="17.0" prefWidth="112.0" text="UserName : PICM" />
+            <Button layoutX="744.0" layoutY="57.0" mnemonicParsing="false" onAction="#logout_button" prefHeight="25.0" prefWidth="79.0" text="Logout" />
+            <ImageView fitHeight="109.0" fitWidth="106.0" layoutX="387.0" layoutY="49.0" AnchorPane.bottomAnchor="413.0" AnchorPane.leftAnchor="387.0" AnchorPane.rightAnchor="387.0" AnchorPane.topAnchor="49.0">
+               <image>
+                  <Image url="@titas.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="186.0" mnemonicParsing="false" onAction="#ViewInventoryItems_button" prefHeight="25.0" prefWidth="264.0" text="View Inventory Items" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="223.0" mnemonicParsing="false" onAction="#AddInventoryItems_button" prefHeight="25.0" prefWidth="264.0" text="Add Inventory Items" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+            <Button layoutX="14.0" layoutY="261.0" mnemonicParsing="false" onAction="#DeleteInventoryItems_button" prefHeight="25.0" prefWidth="264.0" text="Delete Inventory Items" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="296.0" mnemonicParsing="false" onAction="#PurchasesinventoryItems_button" prefHeight="25.0" prefWidth="264.0" text="Purchases inventory Items" textOverrun="CLIP" wrapText="true" />
+            <Button layoutX="14.0" layoutY="335.0" mnemonicParsing="false" onAction="#Communicateswithsuppliers_button" prefHeight="25.0" prefWidth="264.0" text="  Communicates with suppliers" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="372.0" mnemonicParsing="false" onAction="#sendingreviwe_button" prefHeight="25.0" prefWidth="264.0" text="sending A reviews purchase order items" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+            <Button layoutX="14.0" layoutY="413.0" mnemonicParsing="false" onAction="#sendingrequest_button" prefHeight="25.0" prefWidth="264.0" text="Sending requests for need inventory items " textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="452.0" mnemonicParsing="false" onAction="#totalinventorycost_button" prefHeight="25.0" prefWidth="264.0" text="Total inventory cost list sending " textAlignment="CENTER" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

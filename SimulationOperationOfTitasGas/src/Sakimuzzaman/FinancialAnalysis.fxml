@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="Sakimuzzaman.FinancialAnalysisController">
+   <children>
+      <TableView layoutX="68.0" layoutY="127.0" prefHeight="200.0" prefWidth="464.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Name of Parties" />
+          <TableColumn prefWidth="75.0" text="Relationship" />
+            <TableColumn prefWidth="75.0" text="Nature of Transaction" />
+            <TableColumn prefWidth="75.0" text="Net Transaction During The Year" />
+            <TableColumn prefWidth="75.0" text="Outstanding  as on revevable" />
+            <TableColumn prefWidth="75.0" text="Outstanding as on payable" />
+        </columns>
+      </TableView>
+      <Label layoutX="67.0" layoutY="58.0" prefHeight="17.0" prefWidth="249.0" text="Financial risk management">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

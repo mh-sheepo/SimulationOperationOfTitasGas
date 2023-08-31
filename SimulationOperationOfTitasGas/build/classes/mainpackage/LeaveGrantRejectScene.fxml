@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="704.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="mainpackage.LeaveGrantRejectSceneController">
+   <children>
+      <TableView layoutX="14.0" layoutY="14.0" prefHeight="379.0" prefWidth="677.0">
+        <columns>
+          <TableColumn fx:id="employeeNameCol" prefWidth="104.0" text="EmployeeName" />
+          <TableColumn fx:id="leaveApplicationCol" prefWidth="427.0" text="Leave Application" />
+            <TableColumn fx:id="statusCol" prefWidth="166.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="430.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="37.0" prefWidth="76.0" style="-fx-background-radius: 10;" text="Back" />
+   </children>
+</AnchorPane>

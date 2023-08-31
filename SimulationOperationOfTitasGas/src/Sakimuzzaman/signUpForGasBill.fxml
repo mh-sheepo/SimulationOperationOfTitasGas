@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sakimuzzaman.SignUpForGasBillController">
+   <children>
+      <Label layoutX="79.0" layoutY="46.0" prefHeight="29.0" prefWidth="337.0" text="Sign up for titas gas online billing System">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="101.0" text="User Name:" />
+      <TextField fx:id="userNameId" layoutX="194.0" layoutY="97.0" />
+      <Label layoutX="86.0" layoutY="143.0" text="Password" />
+      <TextField fx:id="passId" layoutX="194.0" layoutY="139.0" />
+      <Label layoutX="53.0" layoutY="192.0" text="Customer ID Number:" />
+      <TextField fx:id="customerId" layoutX="194.0" layoutY="188.0" />
+      <Label layoutX="67.0" layoutY="246.0" text="Adrress of Custoemr" />
+      <TextField layoutX="194.0" layoutY="242.0" />
+      <Label layoutX="57.0" layoutY="287.0" text="Connection Type" />
+      <CheckBox layoutX="194.0" layoutY="287.0" mnemonicParsing="false" text="Metered " />
+      <CheckBox layoutX="307.0" layoutY="287.0" mnemonicParsing="false" text="Non-metered" />
+      <Button fx:id="confirmBtnId" layoutX="253.0" layoutY="335.0" mnemonicParsing="false" onAction="#confirmBtnOnClicked" prefHeight="29.0" prefWidth="109.0" text="Confirm" />
+      <Button fx:id="cancelBtnId" layoutX="407.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancelBtnOnClicked" prefHeight="29.0" prefWidth="109.0" text="Cancel" />
+   </children>
+</AnchorPane>

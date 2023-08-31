@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="momo.DefaultDashbaord07Controller">
+   <children>
+      <AnchorPane prefHeight="537.0" prefWidth="765.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="548.0" prefHeight="18.0" prefWidth="755.0" style="-fx-background-color: royalblue;" text="Copyright © 2023  TITAS GAS LIMITED. ALL RIGHTS RESERVED - Developed By IUB" textAlignment="CENTER" wrapText="true" />
+            <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="338.0" layoutY="32.0" AnchorPane.bottomAnchor="426.0" AnchorPane.leftAnchor="338.0" AnchorPane.rightAnchor="301.0" AnchorPane.topAnchor="32.0">
+               <image>
+                  <Image url="@titas.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="676.0" layoutY="49.0" mnemonicParsing="false" onAction="#logout_button" prefHeight="25.0" prefWidth="68.0" text="Logout" />
+            <Label layoutX="13.0" layoutY="40.0" prefHeight="17.0" prefWidth="112.0" text="UserName : OM" />
+            <Label layoutX="14.0" layoutY="61.0" prefHeight="25.0" prefWidth="204.0" text="Designation : Operations Manager" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button layoutX="14.0" layoutY="168.0" mnemonicParsing="false" onAction="#ViewRequestforInventoryItems_button" prefHeight="25.0" prefWidth="240.0" text="View Request for Inventory Items" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="207.0" mnemonicParsing="false" onAction="#Ensuringalloperationsarecarried_button" prefHeight="25.0" prefWidth="240.0" text="Ensuring all operations are carried " textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+            <Button layoutX="14.0" layoutY="249.0" mnemonicParsing="false" onAction="#Viewsinventorywarehousestocklist_button" prefHeight="25.0" prefWidth="240.0" text="Views inventory warehouse stock list. " textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="294.0" mnemonicParsing="false" onAction="#Managebudgetsandforecasts_button" prefHeight="25.0" prefWidth="240.0" text="Manage budgets and forecasts" textOverrun="CLIP" wrapText="true" />
+            <Button layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#Viewemployercomplaints_button" prefHeight="25.0" prefWidth="240.0" text="View employer complaints." textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="374.0" mnemonicParsing="false" onAction="#Viewallemployerjobstatus_button" prefHeight="25.0" prefWidth="240.0" text="View all employer job status." textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+            <Button layoutX="14.0" layoutY="415.0" mnemonicParsing="false" onAction="#Viewallemployersalarydetails_button" prefHeight="25.0" prefWidth="240.0" text="View all employer salary details." textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="459.0" mnemonicParsing="false" onAction="#ApplyforLeaveofAbsence_button" prefHeight="25.0" prefWidth="240.0" text="Apply for Leave of Absence" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="755.0" style="-fx-background-color: royalblue;" text="Titas Gas Transmission &amp; Distribution Company Limited, Call Center : 16496 " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

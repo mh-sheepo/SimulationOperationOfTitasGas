@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="651.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SheepuScene.ViewComplaintsController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="729.0" prefWidth="841.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="288.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accountant" textAlignment="CENTER" wrappingWidth="309.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <ListView fx:id="complainRecordsLabel" focusTraversable="false" layoutX="169.0" layoutY="222.0" prefHeight="441.0" prefWidth="560.0" />
+            <Button focusTraversable="false" layoutX="44.0" layoutY="222.0" mnemonicParsing="false" onAction="#viewComplaints" text="View Complaints" />
+            <Text layoutX="183.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TItas Gas" textAlignment="CENTER" wrappingWidth="516.84375">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Text>
+            <Text layoutX="380.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaints Record " />
+            <ImageView fitHeight="113.0" fitWidth="115.0" layoutX="56.0" layoutY="37.0">
+               <image>
+                  <Image url="@titas.jpg" />
+               </image>
+            </ImageView>
+            <Button focusTraversable="false" layoutX="614.0" layoutY="678.0" mnemonicParsing="false" onAction="#update_button_complaints" prefHeight="25.0" prefWidth="115.0" text="Update" />
+            <Button focusTraversable="false" layoutX="491.0" layoutY="678.0" mnemonicParsing="false" onAction="#edit_button_complaints" prefHeight="25.0" prefWidth="115.0" text="Edit" />
+            <TableView layoutX="169.0" layoutY="222.0" prefHeight="441.0" prefWidth="560.0">
+              <columns>
+                <TableColumn fx:id="date_of_complaints" prefWidth="104.0" text="Date" />
+                <TableColumn fx:id="complaints_id" prefWidth="152.0" text="Complaint ID" />
+                  <TableColumn fx:id="complaints_subject" prefWidth="138.0" text="Subject" />
+                  <TableColumn fx:id="complaints_details" prefWidth="165.0" text="Complaint Details" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="28.0" layoutY="310.0" mnemonicParsing="false" onAction="#next_button_complaints" text="Next" />
+      <Button layoutX="96.0" layoutY="310.0" mnemonicParsing="false" onAction="#previous_button_complaints" text="Previous" />
+   </children>
+</AnchorPane>
